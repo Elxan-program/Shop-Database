@@ -1,0 +1,20 @@
+﻿<Window x:Class="Shop_Database.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Shop_Database"
+        mc:Ignorable="d"
+        Title="Shop Datenbank" Height="450" Width="800">
+    <Grid>
+        <StackPanel Background="Green">
+            <ComboBox FontSize="28" Width="750" Margin="0,15,0,0"  Height="48" Name="Combo_box" SelectionChanged="Combo_box_SelectionChanged"></ComboBox>
+            <DataGrid FontSize="38" Height="225" Name="MeinGirid" SelectionChanged="MeinGirid_SelectionChanged" Margin="0,25,0,0" Width="750"></DataGrid>
+            <WrapPanel>
+                <Button Background="MediumSeaGreen" Width="250" FontSize="30" Height="80" Margin="100,15,0,0" Name="Buy_btn" Click="Buy_btn_Click">Buy</Button>
+                <Button Background="MediumSeaGreen" Width="250" FontSize="30" Height="80" Margin="100,15,0,0" Name="Sell_btn" Click="Sell_btn_Click">Sell</Button>
+            </WrapPanel>
+        </StackPanel>
+        
+    </Grid>
+</Window>
